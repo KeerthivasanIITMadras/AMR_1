@@ -71,7 +71,7 @@
     </collision>
   </link>
 
-  <link name="lidar_link">
+  <!-- <link name="lidar_link">
     <inertial>
       <origin xyz="0.0084954458305041 -0.09792752116058154 0.4033086335221119" rpy="0 0 0" />
       <mass value="2.398694236735612" />
@@ -92,6 +92,23 @@
           scale="0.01 0.01 0.01" />
       </geometry>
     </collision>
+  </link> -->
+
+  <link name="lidar_link">
+    <visual>
+      <geometry>
+        <cylinder radius="0.05" length="0.04" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder radius="0.05" length="0.04" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.5" />
+      <inertia ixx="0.000252666666667" ixy="0" ixz="0" iyy="0.000252666666667" iyz="0" izz="0.0005" />
+    </inertial>
   </link>
 
   <joint name="Revolute_3" type="continuous">
@@ -109,7 +126,7 @@
   </joint>
 
   <joint name="Rigid_5" type="fixed">
-    <origin xyz="0.205 0.1 -0.125" rpy="0 0 0" />
+    <origin xyz="0.25 0 0.27" rpy="0 0 0" />
     <parent link="base_link" />
     <child link="lidar_link" />
   </joint>

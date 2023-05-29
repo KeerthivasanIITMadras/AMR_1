@@ -1,11 +1,9 @@
 <launch>
-  <param name="robot_description" command="$(find xacro)/xacro $(find AMR_1_description)/urdf/AMR_1.xacro"/>
-  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf -model AMR_1"/>
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
-    <!-- S<arg name="paused" value="true"/> -->
-    <arg name="use_sim_time" value="true"/>
-    <arg name="gui" value="true"/>
-    <arg name="headless" value="false"/>
-    <arg name="debug" value="false"/>
+    <arg name="world_name" value="$(find AMR_1_description)/worlds/obstacle.world" />
+    <arg name="use_sim_time" value="true" />
+    <arg name="gui" value="true" />
+    <arg name="headless" value="false" />
+    <arg name="debug" value="false" />
   </include>
 </launch>

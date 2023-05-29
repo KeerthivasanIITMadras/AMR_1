@@ -146,7 +146,7 @@ Visualization Manager:
       Size (Pixels): 3
       Size (m): 0.009999999776482582
       Style: Flat Squares
-      Topic: /AMR_1/laser/scan
+      Topic: /scan
       Unreliable: false
       Use Fixed Frame: true
       Use rainbow: true
@@ -179,7 +179,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 15.273276329040527
+      Distance: 8.060195922851562
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -195,9 +195,9 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.14539742469787598
+      Pitch: 0.6853973269462585
       Target Frame: <Fixed Frame>
-      Yaw: 0.15356016159057617
+      Yaw: 4.1717329025268555
     Saved: ~
 Window Geometry:
   Displays:
@@ -216,4 +216,4 @@ Window Geometry:
     collapsed: false
   Width: 1216
   X: 704
-  Y: 41
+  Y: 27

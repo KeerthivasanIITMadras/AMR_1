@@ -10,3 +10,4 @@
 
 https://github.com/KeerthivasanIITMadras/AMR_1/assets/94305617/cc585691-dae2-40dd-9729-cf83faf76f71
 
+<p>After localization, a action script or gui interface of rviz can be used to give goal or do specific tasks</p>
